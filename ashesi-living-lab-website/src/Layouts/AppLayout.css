@@ -1,0 +1,15 @@
+.AppLayout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.AppLayout .pages-container {
+    padding: 30px 0;
+    height: 100vh;
+    overflow: auto;
+}
+
+.AppLayout .pages-container::-webkit-scrollbar {
+    display: none;
+}

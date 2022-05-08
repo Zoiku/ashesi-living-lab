@@ -1,0 +1,37 @@
+.LeftMenu {
+    height: 100vh;
+    display: grid;
+    background-color: #24252a;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.LeftMenu ul {
+    margin: 40px 0 0 0;
+}
+
+.LeftMenu ul li {
+    color: gray;
+    text-align: center;
+    margin-bottom: 30px; 
+    display: grid;
+    place-content: center;
+    transition: all 0.3s ease;
+}
+
+.LeftMenu ul li:hover {
+    color: #fff;
+}
+
+.LeftMenu ul .gear:hover {
+    animation: gear .3s ease forwards;
+}
+
+@keyframes gear {
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.active li {
+    color: #8963BA !important; 
+}
